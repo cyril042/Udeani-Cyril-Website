@@ -1,18 +1,11 @@
 body {    
-    background-color: blue;
+    background-color:  #f3ec8e;
     color: white;
 }
 
 #submit-button:hover {
     color: white;
     background-color: black;
-}
-
-h2 {
-    margin-left: 10px;
-    font-size: smaller;
-    padding-top: 15px;
-    color: darkslategray;
 }
 
 .menu-bar {
@@ -30,9 +23,9 @@ h2 {
 }
 
 .menu-bar ul li {
-        list-style: none;
-        padding: 0 5px 0 5px;
-        display: list-item;
+    list-style: none;
+    padding: 0 5px 0 5px;
+    display: list-item;
  
 }
 
@@ -55,9 +48,41 @@ h2 {
     background-color: gray;
 }
 
+h2 {
+    margin-left: 10px;
+    font-size: smaller;
+    padding-top: 15px;
+    color: darkslategray;
+}
+
+.contact-content {
+    font-size: large;
+    margin-top: 4rem;
+    margin-left: 2rem;
+}
+
+.text-input {
+    width: 13rem;
+    height: 1.8rem;
+}
+
+#status {
+    display: none;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+
 /* Desktop view */
-@media screen and (min-width: 600px){
-    
+@media screen and (min-width: 971px){   
+    body {    
+        background-color:  blue;
+        color: white;
+    } 
+
     h2 {
         margin-left: 10px;
         font-size: large;
@@ -70,7 +95,6 @@ h2 {
         justify-content: space-around;
         list-style: none;
         width: 100%;
-        float: left;
         background-color: darkslategray;
         height: 50px;
         padding: 0;
@@ -85,5 +109,16 @@ h2 {
         color: white;
         text-decoration: none;
         font-size: 0.8em;
+    }
+
+    .contact-content {
+        font-size: medium;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    
+    .text-input {
+        width: 13rem;
+        height: 1.8rem;
     }
 }
