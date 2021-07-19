@@ -13,7 +13,6 @@ main {
     display: block;
     width: 90%;
     
-    
 }
 
 h2 {
@@ -30,7 +29,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     background-color: darkslategray;
-    float: left;
     margin: 0;
     padding: 0;
     height: 50px;
@@ -38,11 +36,11 @@ h2 {
 }
 
 .menu-bar ul li {
-        list-style: none;
-        float: left;
-        margin: 0 0 6px 0;
-        padding: 0 0 4px 5px;
-        display: list-item;
+    list-style: none;
+    float: left;
+    margin: 0 0 6px 0;
+    padding: 0 0 4px 5px;
+    display: list-item;
  
 }
 
@@ -74,8 +72,8 @@ a, a:hover {
 }
 
 #photo {
-    width: 18vw;
-    height: 16vh;
+    width: 75px;
+    height: 75px;
 }
 
 #links a {
@@ -172,8 +170,9 @@ footer {
     
     
     #photo {
-        width: 18vw;
-        height: 18vh;
+        width: 170px;
+        height: 120px;
+        padding-left: 2em;
     }
     
     #links {
@@ -205,4 +204,130 @@ footer {
        
     }
         
+}
+
+#contactme {
+    body {    
+        background-color:  #f3ec8e;
+        color: white;
+    }
+    
+    #submit-button:hover {
+        color: white;
+        background-color: black;
+    }
+    
+    .menu-bar {
+        background-color: darkslategray;
+    }
+    
+    .menu-bar ul {
+        display: flex;
+        justify-content: space-between;
+        background-color: darkslategray;
+        margin: 10px;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+    }
+    
+    .menu-bar ul li {
+        list-style: none;
+        padding: 0 5px 0 5px;
+        display: list-item;
+     
+    }
+    
+    .menu-bar ul li a {
+        letter-spacing: 0.1em;
+        font-size: 8px;
+        display: block;
+        height: 15px;
+        margin: 10px 5px 0 5px;
+        text-align: center;
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+    .selected {
+        background-color: black;
+    }
+    
+    .not-selected:hover {
+        background-color: gray;
+    }
+    
+    h2 {
+        margin-left: 10px;
+        font-size: smaller;
+        padding-top: 15px;
+        color: darkslategray;
+    }
+    
+    .contact-content {
+        font-size: large;
+        margin-top: 4rem;
+        margin-left: 2rem;
+    }
+    
+    .text-input {
+        width: 13rem;
+        height: 1.8rem;
+    }
+    
+    #status {
+        display: none;
+        width: 80%;
+        text-align: center;
+        padding: 10px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    
+    
+    /* Desktop view */
+@media screen and (min-width: 971px){   
+    body {    
+        background-color:  blue;
+        color: white;
+    } 
+
+    h2 {
+        margin-left: 10px;
+        font-size: large;
+        padding-top: 15px;
+        color: #000;
+    }
+
+    .menu-bar ul {
+        display: inline-flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        background-color: darkslategray;
+        height: 50px;
+        padding: 0;
+    }
+
+    .menu-bar ul li {
+    margin-top: 1em;
+    
+    }
+
+    .menu-bar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8em;
+    }
+
+    .contact-content {
+        font-size: medium;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    
+    .text-input {
+        width: 13rem;
+        height: 1.8rem;
+    }
 }
