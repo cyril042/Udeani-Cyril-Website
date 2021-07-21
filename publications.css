@@ -64,7 +64,7 @@ h2 {
 /* Mobile view */
 @media screen and (max-width: 600px){
     .publication-content {
-        width: 90vw;
+        width: 90%;
         margin: 1.2rem;
     }
     
@@ -73,7 +73,7 @@ h2 {
     }
 
     .des {
-        width: 72vw;
+        width: 72%;
         margin-right: 5rem;
     }
 }
