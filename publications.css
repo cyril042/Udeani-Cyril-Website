@@ -4,6 +4,10 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.publication-content {
+    margin: 2rem;
+}
+
 .selected {
     background-color: black;
 }
@@ -52,14 +56,30 @@ h2 {
 }
 
 .text {
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: justify;
 }
 
+/* Mobile view */
+@media screen and (max-width: 600px){
+    .publication-content {
+        width: 90vw;
+        margin: 1.2rem;
+    }
+    
+    .text {
+        margin-left: 0.2rem;
+    }
+
+    .des {
+        width: 78vw;
+        margin-right: 6rem;
+    }
+}
 
 /* Desktop view */
-@media screen and (min-width: 600px){
+@media screen and (min-width: 601px){
     h2 {
         margin-left: 10px;
         font-size: large;
